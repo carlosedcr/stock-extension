@@ -1,0 +1,19 @@
+{
+   "browser_action": {
+      "default_icon": "icon48.png"
+   },
+   "description": "Acompanhar os valores de ativos e receber alertas",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "512": "icon512.png"
+   },
+   "manifest_version": 2,
+   "name": "Stocks",
+   "options_page": "options.html",
+   "background": { "scripts": ["background.js", "lib/jquery.min.js"] },
+   "permissions": [ "storage", "https://www.google.com.br/*", "https://finance.yahoo.com/*", "alarms", "notifications", "tabs" ],
+   "short_name": "Stocks",
+   "version": "1.0.0"
+}

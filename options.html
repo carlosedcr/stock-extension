@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Notification</title>
+    <link href="style/opt_styles.css" rel="stylesheet" type="text/css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="options.js"></script>
+    <script src="background.js"></script>
+  </head>
+  <body>
+    <h1>
+      Notification
+    </h1>
+    <h2>Options</h2>
+    <form id="options">
+      <input type="checkbox" name="isActivated" checked>
+      Verificar ativo a cada
+      <select name="frequency">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>10</option>
+        <option>15</option>
+        <option>20</option>
+        <option>25</option>
+        <option>30</option>
+      </select>
+      minuto(s).
+    </form>
+    <h2>Alerta</h2>
+    <form id="alertOptions">
+      <div class="line">
+        <label for="asset">Ativo</label>
+        <input type="text" name="asset">
+        <label style="padding-left: 8px;" for="paidPrice">Valor da compra</label>
+        <input type="number" name="paidPrice">
+        <label style="padding-left: 8px;" for="quantity">Quantidade</label>
+        <input type="number" name="quantity">
+      </div>
+      <div class="line">
+        <label for="maxprice">Alerta de maximo</label>
+        <input type="number" name="maxprice">
+      </div>
+      <div class="line">
+        <label for="minprice">Alerta de minimo</label>
+        <input type="number" name="minprice">
+      </div>
+      <div class="line">
+        <input id="save" type="button" value="Salvar">
+      </div>
+    </form>
+  </body>
+</html>
